@@ -1,13 +1,101 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(10, 10, 10);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.body {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.content {
+  width: 400px;
+  height: inherit;
+  background: linear-gradient(55deg, rgb(22, 22, 22), rgb(55, 54, 54));
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.content:hover{
+  box-shadow: 0px 0px 8px blue;
+}
+
+h1 {
+  color: white;
+}
+
+.input {
+  padding: 5px;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+}
+
+.inputtype {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.button1 {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.li {
+  margin-top: 10px;
+  width: 300px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid blue;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.li:hover {
+  border: 2px solid rgb(255, 255, 255);
+}
+
+li {
+  color: white;
+}
+
+label {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  width: 100%;
+}
+
+.button2 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button3 {
+  border: 2px solid blue;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  padding: 5px 15px 5px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.button3:hover {
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.check {
+  cursor: pointer;
 }
