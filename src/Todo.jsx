@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 
 const Todo = () => {
-    let [storeitem, setStoreitem] = useState([]);
-    let [usecare, setUsecare] = useState("");
-    let [edit, setedit] = useState(false);
-    let [editindex, setEditindex] = useState(null);
-    let [ischecked, setIschecked] = useState(false);
+    let [storeitem, setStoreitem] = useState([]);//storeing the index
+    let [usecare, setUsecare] = useState("");// input field
+    let [edit, setedit] = useState(false);//button in changing {save:add}
+    let [editindex, setEditindex] = useState(null);// input field in the changing field
+    let [ischecked, setIschecked] = useState(false);//check box
 
-
+    
     const add = () => {
-        if (usecare !== "") {
+        if (usecare !== "") { //not a emty
             if (edit) {
                 let updateditems = storeitem.map((item, i) =>
                     i === editindex ? usecare : item
@@ -23,11 +23,12 @@ const Todo = () => {
             setUsecare("");
         }
     };
-
+    // deleting the index
     const deleteitems = (index) => {
         let deleteitem = storeitem.filter((ele, i) => i !== index);
         setStoreitem(deleteitem);
     }
+    // upper to the index
     const edit1 = (index) => {
         setUsecare(storeitem[index]);
         setedit(true);
